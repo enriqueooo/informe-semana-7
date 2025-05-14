@@ -52,7 +52,7 @@ Se demostrará cómo definir un `Dockerfile` para React, construir la imagen, cr
 git clone https://github.com/Daviddotcoms/suda-frontend-s6.git
 cd suda-frontend-s6
 ```
-![Front]()
+![Front](docker-file/front.png)
 
 ## Paso 2: Verificar funcionamiento del proyecto local
 
@@ -80,7 +80,7 @@ RUN npm install
 # Comando por defecto
 CMD ["npm", "start"]
 ```
-![]()
+![](docker-file/3.png)
 
 ## Paso 4: Construir la imagen Docker
 
@@ -107,7 +107,7 @@ npm install
 npm start
 # Esto iniciará el backend en http://localhost:5000.
 ```
-![]()
+![](docker-file/backend.png)
 ## 9. Resultados esperados
 
 - La imagen `suda-frontend` debe construirse sin errores.
