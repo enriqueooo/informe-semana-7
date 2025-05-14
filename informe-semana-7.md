@@ -75,12 +75,6 @@ COPY . .
 # Instalar dependencias
 RUN npm install
 
-# Construcción del proyecto
-RUN npm run build
-
-# Exponer puerto
-EXPOSE 3000
-
 # Comando por defecto
 CMD ["npm", "start"]
 ```
