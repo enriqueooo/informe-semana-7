@@ -67,17 +67,20 @@ A continuación se muestra el contenido del archivo `Dockerfile`:
 ```Dockerfile
 # Imagen base
 FROM node:18-alpine
+#Alpine es una distribucion de linux muy ligera
 
-# Directorio de trabajo
+#/app/lib ...
+#Cambiar nuestro directorio de trabajo
 WORKDIR /app
 
-# Copiar archivos
+# Copiar nuestro proyecto
 COPY . .
 
-# Instalar dependencias
+# Cuando tengamos dependencias dentro de nuestro package.json, necesita intalarlos
+#Comando de instalacion
 RUN npm install
 
-# Comando por defecto
+# Comando para levantar la aplicacion / contenedor
 CMD ["npm", "start"]
 ```
 ![](docker-file/3.png)
